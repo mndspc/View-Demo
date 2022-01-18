@@ -1,0 +1,32 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Ladder If Demo</title>
+</head>
+<body>
+    <div>
+        @{
+            var theBalance = 4.99;
+            if (theBalance == 0)
+            {
+                <p>You have a zero balance.</p>
+            }
+            else if (theBalance > 0 && theBalance <= 5)
+            {
+                <p>Your balance of $ @theBalance is very low.</p>
+            }
+            else
+            {
+                <p>Your balance is: $@theBalance</p>
+            }
+        }
+    </div>
+</body>
+</html>

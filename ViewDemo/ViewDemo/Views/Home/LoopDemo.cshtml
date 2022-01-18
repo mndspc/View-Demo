@@ -1,0 +1,40 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Loop Demo</title>
+</head>
+<body>
+    <div>
+        @for (var i = 10; i < 21; i++)
+        {
+            <p>Line #: @i</p>
+        }
+
+        @{
+            string[] courses = { "MS.net", "Java", "Php" };
+        }
+
+        <ul>
+            @foreach (var item in courses)
+            {
+                <li>@item</li>
+            }
+        </ul>
+
+        @{  
+            var countNum = 0;
+            while (countNum < 50)
+            {
+                countNum += 1; <p>Line #@countNum: </p>}
+            }
+
+    </div>
+</body>
+</html>

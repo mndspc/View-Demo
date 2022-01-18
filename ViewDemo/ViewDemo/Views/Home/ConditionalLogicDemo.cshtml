@@ -1,0 +1,29 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Conditional Logic Demo</title>
+</head>
+<body>
+    <div>
+        @{
+            var showToday = true;
+            if (showToday)
+            {
+                <p>@DateTime.Today.ToString("dd-MMM-yyyy")</p>
+            }
+            else
+            {
+                <p>Sorry</p>
+            }
+        }
+
+    </div>
+</body>
+</html>

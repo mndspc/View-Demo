@@ -1,0 +1,26 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Conversion Demo using View</title>
+</head>
+<body>
+    <div>
+        @{
+            var myIntNumber = 0; 
+            var myStringNum = "539";
+            if (myStringNum.IsInt()) 
+            { 
+                myIntNumber = myStringNum.AsInt();
+                <p>After converting string into a Integer:@myIntNumber</p>
+            }
+        }
+    </div>
+</body>
+</html>
